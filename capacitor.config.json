@@ -1,0 +1,6 @@
+{
+  "appId": "com.hesabati.shop",
+  "appName": "حساباتي",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
