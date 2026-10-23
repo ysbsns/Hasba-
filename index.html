@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#151923"><meta name="description" content="حساباتي — إدارة المحل والمبيعات والأرباح والمخزون">
+<title>حساباتي | إدارة المحل</title><link rel="manifest" href="manifest.json">
+<style>
+
+:root{--bg:#f4f6f9;--surface:#fff;--ink:#171c28;--muted:#778093;--line:#e8ecf2;--navy:#171d2a;--navy2:#242e40;--gold:#d8b56d;--green:#14966f;--greenbg:#e6f7f0;--red:#d94e5c;--redbg:#fff0f1;--purple:#6558c7;--purplebg:#efedff;--shadow:0 10px 30px #1821340c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Cairo,Tahoma,Arial,sans-serif;color:var(--ink);font-size:14px;-webkit-tap-highlight-color:transparent}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{max-width:760px;min-height:100dvh;margin:auto;padding-bottom:88px}.top{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 19px;position:sticky;top:0;z-index:4}.brand{display:flex;gap:10px;align-items:center}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(140deg,#29364c,#121720);display:grid;place-items:center;color:var(--gold);font-size:22px;font-weight:800}.brand b{font-size:16px;display:block}.brand small{font-size:10px;color:var(--muted)}.top-status{font-size:10px;background:var(--greenbg);color:var(--green);padding:7px 9px;border-radius:10px;font-weight:800}main{padding:20px 16px 28px}.screen{display:none}.screen.active{display:block;animation:appear .18s ease}@keyframes appear{from{opacity:.65;transform:translateY(3px)}to{opacity:1;transform:none}}.eyebrow{margin:0 0 4px;color:var(--purple);font-size:11px;font-weight:800}h1{font-size:25px;margin:0;line-height:1.4;font-weight:800}h2{font-size:16px;margin:0;font-weight:800}.muted{color:var(--muted);font-size:11px;margin:4px 0 0}.headrow{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.btn{border:0;background:var(--navy);color:#fff;padding:11px 14px;border-radius:12px;font-size:12px;font-weight:800}.btn.gold{background:var(--gold);color:#20202a}.btn.ghost{background:white;border:1px solid var(--line);color:var(--ink)}.btn.red{background:var(--redbg);color:var(--red)}.btn.small{padding:8px 10px;font-size:11px}.hero{background:radial-gradient(circle at 100% 0,#35415a,transparent 45%),linear-gradient(135deg,#252f43,#11151e);color:#fff;border-radius:23px;padding:20px;position:relative;overflow:hidden;box-shadow:0 14px 28px #10182820}.hero:after{content:"";position:absolute;left:-50px;bottom:-95px;width:180px;height:180px;border:1px solid #ffffff18;border-radius:50%;box-shadow:0 0 0 25px #ffffff08,0 0 0 50px #ffffff04}.hero-top{display:flex;justify-content:space-between;align-items:center;color:#c9cfda;font-size:11px}.pill{font-size:10px;background:#ffffff18;color:#d9e5df;border-radius:8px;padding:6px 8px}.hero-number{font-size:30px;font-weight:800;margin:10px 0 2px;position:relative;z-index:1}.hero-number small{font-size:12px;color:#c4cad5}.hero-sub{font-size:11px;color:#c5cbd7;position:relative;z-index:1}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.stat{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px;min-width:0;box-shadow:var(--shadow)}.stat .label{color:var(--muted);font-size:11px;display:flex;align-items:center;gap:7px}.dot{width:9px;height:9px;border-radius:3px;display:inline-block}.stat strong{font-size:clamp(14px,4vw,19px);display:block;margin-top:8px;overflow-wrap:anywhere}.stat small{font-size:10px;color:var(--muted)}.section{margin-top:24px}.sectionhead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.quick button{border:1px solid var(--line);background:#fff;border-radius:16px;min-height:88px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;font-size:11px;font-weight:800;color:#333b4d}.qicon{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;font-size:20px}.greenbg{background:var(--greenbg);color:var(--green)}.redbg{background:var(--redbg);color:var(--red)}.purplebg{background:var(--purplebg);color:var(--purple)}.card{background:#fff;border:1px solid var(--line);border-radius:17px;overflow:hidden}.empty{padding:24px 14px;text-align:center;color:var(--muted);font-size:12px;line-height:1.9}.row{display:flex;align-items:center;gap:10px;padding:12px;border-bottom:1px solid var(--line)}.row:last-child{border-bottom:0}.thumb{width:42px;height:42px;flex-shrink:0;border-radius:13px;background:#f0eeff;color:var(--purple);display:grid;place-items:center;font-size:19px;font-weight:800;overflow:hidden}.thumb img{width:100%;height:100%;object-fit:cover}.rowmain{flex:1;min-width:0}.rowmain b{font-size:12px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rowmain small{font-size:10px;color:var(--muted);display:block;margin-top:3px}.rowval{text-align:left;white-space:nowrap;font-size:11px;font-weight:800}.green{color:var(--green)}.red{color:var(--red)}.stock-low{color:#ad7414;background:#fff4db;border-radius:7px;padding:4px 6px;font-size:9px}.search{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px;margin-bottom:11px;font-size:12px}.products{display:grid;gap:10px}.product-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:13px;display:flex;gap:11px;align-items:center}.product-card .thumb{width:56px;height:56px}.product-info{flex:1;min-width:0}.product-info b{display:block;font-size:13px}.product-info p{margin:4px 0;color:var(--muted);font-size:10px}.product-prices{display:flex;flex-wrap:wrap;gap:8px;font-size:10px}.product-actions{display:flex;gap:6px;flex-direction:column}.tag{font-size:10px;background:#f2f4f8;border-radius:7px;padding:5px 7px;color:#5e6677}.seg{display:flex;gap:4px;background:#e9edf3;padding:4px;border-radius:12px;margin-bottom:12px}.seg button{flex:1;border:0;background:transparent;padding:9px 4px;border-radius:9px;font-size:11px;color:#687184;font-weight:800}.seg button.active{background:#fff;color:var(--ink);box-shadow:0 2px 7px #1018280d}.sale-list{display:grid;gap:9px}.sale-item{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:15px;padding:11px}.sale-item .info{flex:1;min-width:0}.sale-item b{font-size:12px}.sale-item small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.qty{display:flex;align-items:center;gap:8px;background:#f1f3f7;padding:5px;border-radius:10px}.qty button{border:0;background:#fff;border-radius:7px;width:27px;height:27px;font-weight:800}.qty strong{min-width:13px;text-align:center;font-size:12px}.checkout{position:sticky;bottom:82px;margin-top:14px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px #10182812;border-radius:17px;padding:14px;z-index:2}.checkoutline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.checkoutline strong{font-size:17px}.checkout .btn{width:100%}.session-banner{background:#e7f7f0;color:#126c52;border:1px solid #cdeee1;border-radius:16px;padding:15px;display:flex;align-items:center;gap:11px;margin-bottom:13px}.session-banner.closed{background:#fff4db;color:#865b11;border-color:#f3e4bb}.session-symbol{width:40px;height:40px;border-radius:12px;background:#ffffffb0;display:grid;place-items:center;font-size:20px}.session-banner b{font-size:13px;display:block}.session-banner small{font-size:10px;display:block;margin-top:3px}.session-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px}.session-metrics .stat{padding:13px}.close-summary{background:#fff;border:1px solid var(--line);border-radius:17px;padding:15px;margin-top:12px}.sumline{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px}.sumline:last-child{border:0}.sumline b{white-space:nowrap}.note{font-size:10px;line-height:1.8;color:var(--muted);margin:12px 0 0}.report-bar{height:9px;background:#eef1f5;border-radius:20px;overflow:hidden;margin-top:7px}.report-bar span{display:block;height:100%;background:var(--green);border-radius:20px}.settings-row{display:flex;align-items:center;gap:11px;width:100%;text-align:right;background:transparent;border:0;border-bottom:1px solid var(--line);padding:15px 4px}.settings-row .thumb{width:38px;height:38px}.settings-row span:nth-child(2){flex:1}.settings-row b{display:block;font-size:12px}.settings-row small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.danger-note{background:#fff4e3;border:1px solid #f3e1b9;color:#77531d;border-radius:14px;padding:13px;font-size:11px;line-height:1.8;margin-top:16px}.bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);background:#ffffffef;backdrop-filter:blur(15px);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 7px calc(8px + env(safe-area-inset-bottom));z-index:5}.nav{border:0;background:transparent;color:#8b93a3;display:flex;flex-direction:column;align-items:center;gap:2px;padding:3px 0}.nav span{font-size:21px;line-height:1.2}.nav small{font-size:9px;font-weight:800}.nav.active{color:var(--purple)}.nav.active span{background:var(--purplebg);min-width:40px;border-radius:10px;padding:2px 0}.backdrop{position:fixed;inset:0;background:#101522a8;z-index:10;display:flex;align-items:flex-end;justify-content:center}.backdrop[hidden]{display:none}.modal{width:min(590px,100%);max-height:93dvh;overflow:auto;background:#fff;border-radius:23px 23px 0 0;padding:20px 18px calc(23px + env(safe-area-inset-bottom));animation:up .18s ease}.modalhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.modalhead h2{font-size:20px}.xbtn{border:1px solid var(--line);background:#fff;border-radius:10px;width:38px;height:38px;font-size:22px}form{display:grid;gap:12px}label{display:grid;gap:5px;font-size:11px;font-weight:800;color:#454d5c}label input,label select,label textarea{border:1px solid #dfe4ec;border-radius:11px;padding:12px;background:#fbfcfe;width:100%;font-size:12px;color:var(--ink)}label textarea{resize:vertical}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.formgrid .full{grid-column:1/-1}.form-actions{display:flex;gap:8px}.form-actions button{flex:1}.error{color:var(--red);font-size:11px;margin:0}.toast{position:fixed;bottom:94px;left:50%;transform:translate(-50%,15px);opacity:0;z-index:30;background:#222b3b;color:#fff;border-radius:12px;padding:11px 16px;font-size:11px;pointer-events:none;transition:.2s;max-width:90vw;text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}@keyframes up{from{transform:translateY(20px);opacity:.5}to{transform:none;opacity:1}}@media(min-width:650px){main{padding:28px}.bottom{bottom:12px;width:min(700px,calc(100% - 24px));border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px #10182818;padding-bottom:8px}.app{padding-bottom:105px}.modal{align-self:center;border-radius:23px;margin:18px}.backdrop{align-items:center;padding:15px}}@media(max-width:360px){main{padding:16px 11px}.top{padding:0 13px}.hero-number{font-size:26px}.quick{gap:6px}.quick button{font-size:10px}.formgrid{grid-template-columns:1fr}}
+</style></head>
+<body><div class="app">
+<header class="top"><div class="brand"><div class="logo">ح</div><div><b>حساباتي</b><small>إدارة المحل والمبيعات</small></div></div><span class="top-status" id="topStatus">● الجلسة مغلقة</span></header>
+<main>
+<section class="screen active" id="screen-home">
+<div class="headrow"><div><p class="eyebrow" id="today"></p><h1>ملخص المحل</h1><p class="muted">كل أرقام محلك بمكان واحد.</p></div><button class="btn small" data-go="session">الجلسة اليومية</button></div>
+<div class="hero"><div class="hero-top"><span>صافي ربح اليوم التقديري</span><span class="pill" id="homeSessionPill">الجلسة مغلقة</span></div><div class="hero-number" id="homeProfit">0 <small>د.ع</small></div><div class="hero-sub">إجمالي ربح المبيعات − مصاريف اليوم</div></div>
+<div class="stats">
+<div class="stat"><div class="label"><i class="dot" style="background:var(--green)"></i>مبيعات اليوم</div><strong id="homeSales">0 د.ع</strong><small>إجمالي قيمة البيع</small></div>
+<div class="stat"><div class="label"><i class="dot" style="background:var(--purple)"></i>ربح البضاعة</div><strong id="homeGross">0 د.ع</strong><small>قبل المصاريف</small></div>
+<div class="stat"><div class="label"><i class="dot" style="background:var(--red)"></i>مصاريف اليوم</div><strong id="homeExpenses">0 د.ع</strong><small>مصاريف مسجلة</small></div>
+<div class="stat"><div class="label"><i class="dot" style="background:var(--gold)"></i>قيمة المخزون بالتكلفة</div><strong id="homeStock">0 د.ع</strong><small id="homeStockCount">0 قطعة متوفرة</small></div>
+</div>
+<div class="section"><div class="sectionhead"><div><h2>إجراءات سريعة</h2><p class="muted">ابدأ البيع أو سجّل حركة جديدة</p></div></div><div class="quick">
+<button data-go="sell"><span class="qicon greenbg">＋</span>بيع منتج</button><button data-action="product"><span class="qicon purplebg">▣</span>إضافة منتج</button><button data-action="expense"><span class="qicon redbg">−</span>مصروف</button></div></div>
+<div class="section"><div class="sectionhead"><div><h2>آخر المبيعات</h2><p class="muted">أحدث عمليات البيع</p></div><button class="btn ghost small" data-go="reports">التقارير</button></div><div class="card" id="recentSales"><div class="empty">ماكو مبيعات لحد الآن.</div></div></div>
+<div class="section"><div class="sectionhead"><div><h2>تنبيه المخزون</h2><p class="muted">المنتجات القريبة من النفاد</p></div><button class="btn ghost small" data-go="products">المنتجات</button></div><div class="card" id="lowStock"><div class="empty">ماكو منتجات مسجلة.</div></div></div>
+</section>
+
+<section class="screen" id="screen-products">
+<div class="headrow"><div><p class="eyebrow">إدارة البضاعة</p><h1>المنتجات والمخزون</h1><p class="muted">سعر الشراء والبيع والكمية المتبقية.</p></div><button class="btn small" data-action="product">＋ منتج</button></div>
+<input class="search" id="productSearch" placeholder="ابحث عن منتج..." aria-label="البحث عن المنتجات">
+<div class="seg" id="productFilters"><button class="active" data-pfilter="all">الكل</button><button data-pfilter="low">مخزون قليل</button><button data-pfilter="out">نفد</button></div>
+<div class="products" id="productsList"><div class="empty">أضف أول منتج إلى مخزونك.</div></div>
+</section>
+
+<section class="screen" id="screen-sell">
+<div class="headrow"><div><p class="eyebrow">نقطة البيع</p><h1>بيع المنتجات</h1><p class="muted">اختَر المنتجات والكميات ثم أكّد البيع.</p></div><span class="tag" id="cartCount">0 قطعة</span></div>
+<input class="search" id="sellSearch" placeholder="ابحث عن المنتج للبيع..." aria-label="البحث عن منتج للبيع">
+<div id="sellProducts" class="sale-list"><div class="empty">أضف المنتجات أولاً حتى تبيعها.</div></div>
+<div class="checkout"><div class="checkoutline"><span class="muted">إجمالي السلة</span><strong id="cartTotal">0 د.ع</strong></div><div class="checkoutline"><span class="muted">الربح المتوقع</span><b class="green" id="cartProfit">0 د.ع</b></div><button class="btn" id="checkoutBtn">تأكيد البيع وتحديث المخزون</button><p class="note">تأكيد البيع يخصم الكمية من المخزون ويحفظ سعر الشراء وقت البيع حتى يبقى حساب الربح صحيحاً.</p></div>
+</section>
+
+<section class="screen" id="screen-session">
+<div class="headrow"><div><p class="eyebrow">الصندوق اليومي</p><h1>الجلسة اليومية</h1><p class="muted">افتح يوم العمل وأنهِه بمراجعة الصندوق.</p></div></div>
+<div id="sessionStatus" class="session-banner closed"><div class="session-symbol">◷</div><div><b>الجلسة مغلقة حالياً</b><small>افتح جلسة جديدة لتسجيل بداية الصندوق.</small></div></div>
+<div class="session-metrics">
+<div class="stat"><div class="label">مبيعات الجلسة</div><strong id="sessionSales">0 د.ع</strong></div>
+<div class="stat"><div class="label">ربح المبيعات</div><strong id="sessionGross">0 د.ع</strong></div>
+<div class="stat"><div class="label">مصاريف الجلسة</div><strong id="sessionExpenses">0 د.ع</strong></div>
+<div class="stat"><div class="label">صافي ربح الجلسة</div><strong id="sessionProfit">0 د.ع</strong></div>
+</div>
+<div class="close-summary" id="sessionSummary"><h2>ملخص الجلسة</h2><p class="note">بعد فتح الجلسة، راح تظهر هنا تفاصيل الصندوق والمبيعات والمصاريف.</p></div>
+<div class="section"><button class="btn" style="width:100%" id="sessionAction">＋ فتح جلسة اليوم</button></div>
+<div class="section"><div class="sectionhead"><div><h2>سجل الجلسات السابقة</h2><p class="muted">تقارير الإغلاق المحفوظة</p></div></div><div class="card" id="sessionHistory"><div class="empty">ماكو جلسات منتهية لحد الآن.</div></div></div>
+</section>
+
+<section class="screen" id="screen-reports">
+<div class="headrow"><div><p class="eyebrow">الأرقام والنتائج</p><h1>التقارير</h1><p class="muted">مبيعاتك وأرباحك ومخزونك.</p></div><select id="reportPeriod" class="tag" style="border:1px solid var(--line);padding:9px"><option value="today">اليوم</option><option value="month">هذا الشهر</option><option value="all">كل الوقت</option></select></div>
+<div class="hero"><div class="hero-top"><span>صافي الربح التقديري</span><span class="pill">حسب البيانات المسجلة</span></div><div class="hero-number" id="reportNet">0 <small>د.ع</small></div><div class="hero-sub">ربح المبيعات ناقص المصاريف</div></div>
+<div class="stats"><div class="stat"><div class="label">المبيعات</div><strong id="reportSales">0 د.ع</strong></div><div class="stat"><div class="label">تكلفة البضاعة المباعة</div><strong id="reportCost">0 د.ع</strong></div><div class="stat"><div class="label">الربح الإجمالي</div><strong id="reportGross">0 د.ع</strong></div><div class="stat"><div class="label">المصاريف</div><strong id="reportExpenses">0 د.ع</strong></div></div>
+<div class="section"><div class="sectionhead"><div><h2>تفصيل المبيعات</h2><p class="muted">العمليات ضمن الفترة المحددة</p></div></div><div class="card" id="salesHistory"><div class="empty">لا توجد مبيعات ضمن هذه الفترة.</div></div></div>
+<div class="section"><button class="btn ghost" id="exportBtn" style="width:100%">تصدير نسخة احتياطية</button></div>
+</section>
+
+<section class="screen" id="screen-more">
+<div class="headrow"><div><p class="eyebrow">أدوات إضافية</p><h1>المزيد</h1><p class="muted">مصاريف المحل والبيانات والنسخ الاحتياطية.</p></div></div>
+<button class="settings-row" data-action="expense"><span class="thumb">−</span><span><b>تسجيل مصروف</b><small>إيجار، نقل، تغليف، أجور أو غيرها</small></span><b>›</b></button>
+<button class="settings-row" data-action="product"><span class="thumb">＋</span><span><b>إضافة منتج جديد</b><small>سعر الشراء والبيع والكمية</small></span><b>›</b></button>
+<button class="settings-row" id="exportBtn2"><span class="thumb">⇩</span><span><b>نسخة احتياطية</b><small>تصدير كل بياناتك إلى ملف JSON</small></span><b>›</b></button>
+<button class="settings-row" id="importBtn"><span class="thumb">⇧</span><span><b>استعادة نسخة احتياطية</b><small>استرجاع ملف سابق</small></span><b>›</b></button>
+<button class="settings-row" id="csvBtn"><span class="thumb">▤</span><span><b>تصدير سجل المبيعات CSV</b><small>للفتح في Excel أو برامج الجداول</small></span><b>›</b></button>
+<div class="danger-note"><b>حماية البيانات</b><br>هذه النسخة تحفظ البيانات على نفس المتصفح والجهاز فقط. صدّر نسخة احتياطية بشكل دوري. لا توجد مزامنة سحابية أو قفل برمز في هذه النسخة التجريبية.</div>
+<button class="btn red" id="clearBtn" style="width:100%;margin-top:14px">حذف جميع البيانات</button>
+<p class="note" style="text-align:center">حساباتي · نسخة تجريبية لإدارة المحل</p>
+</section>
+</main>
+<nav class="bottom">
+<button class="nav active" data-screen="home"><span>⌂</span><small>الرئيسية</small></button>
+<button class="nav" data-screen="products"><span>▣</span><small>المنتجات</small></button>
+<button class="nav" data-screen="sell"><span>＋</span><small>بيع</small></button>
+<button class="nav" data-screen="session"><span>◷</span><small>الجلسة</small></button>
+<button class="nav" data-screen="more"><span>☰</span><small>المزيد</small></button>
+</nav></div>
+
+<div class="backdrop" id="modalBackdrop" hidden><section class="modal" role="dialog" aria-modal="true"><div class="modalhead"><div><p class="eyebrow" id="modalEyebrow">إضافة</p><h2 id="modalTitle">إضافة منتج</h2></div><button class="xbtn" id="closeModal">×</button></div><form id="entryForm"><input type="hidden" id="formType"><input type="hidden" id="editId"><div id="productFields" class="formgrid">
+<label class="full">اسم المنتج<input id="pName" maxlength="90" required placeholder="مثلاً سماعة بلوتوث"></label>
+<label>سعر الشراء للقطعة<input id="pCost" type="number" min="0" step="1" required inputmode="numeric" placeholder="5000"></label>
+<label>سعر البيع للقطعة<input id="pPrice" type="number" min="0" step="1" required inputmode="numeric" placeholder="7500"></label>
+<label>الكمية الحالية<input id="pQty" type="number" min="0" step="1" required inputmode="numeric" placeholder="20"></label>
+<label>حد التنبيه للمخزون<input id="pMin" type="number" min="0" step="1" required inputmode="numeric" value="3"></label>
+<label class="full">ملاحظات (اختياري)<input id="pNotes" maxlength="200" placeholder="لون، حجم، مورد..."></label>
+</div><div id="expenseFields" hidden class="formgrid">
+<label class="full">عنوان المصروف<input id="eTitle" maxlength="90" required placeholder="إيجار، نقل، تغليف..."></label>
+<label>المبلغ بالدينار<input id="eAmount" type="number" min="1" step="1" required inputmode="numeric" placeholder="10000"></label>
+<label>التصنيف<select id="eCategory"><option>إيجار</option><option>نقل</option><option>فواتير</option><option>تغليف</option><option>أجور</option><option>مشتريات أخرى</option><option>أخرى</option></select></label>
+<label>التاريخ<input id="eDate" type="date" required></label><label>طريقة الدفع<select id="ePayment"><option value="cash">نقداً من الصندوق</option><option value="other">دفع خارج الصندوق</option></select></label>
+<label class="full">ملاحظات<input id="eNotes" maxlength="200" placeholder="اختياري"></label>
+</div><p class="error" id="formError"></p><button class="btn" type="submit" id="saveEntry">حفظ</button></form></section></div>
+
+<div class="backdrop" id="sessionBackdrop" hidden><section class="modal" role="dialog" aria-modal="true"><div class="modalhead"><div><p class="eyebrow">الصندوق اليومي</p><h2 id="sessionModalTitle">فتح جلسة</h2></div><button class="xbtn" id="closeSessionModal">×</button></div><form id="sessionForm"><label id="openingLabel">مبلغ بداية الصندوق بالدينار<input id="openingCash" type="number" min="0" step="1" required inputmode="numeric" placeholder="مثلاً 50000"></label><div id="closingFields" hidden><label>النقد الموجود فعلياً عند الإغلاق<input id="actualCash" type="number" min="0" step="1" required inputmode="numeric" placeholder="عدّ الفلوس الموجودة"></label><label>ملاحظات الإغلاق (اختياري)<textarea id="closingNotes" rows="2" placeholder="مثلاً نقص بالصندوق أو سحب نقدي"></textarea></label><div id="closePreview" class="danger-note"></div></div><p class="error" id="sessionError"></p><button class="btn" id="sessionSubmit" type="submit">فتح الجلسة</button></form></section></div>
+<input type="file" id="importFile" accept=".json,application/json" hidden><div class="toast" id="toast" role="status"></div>
+<script>
+(() => {
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const KEY="hesabati_shop_v2", today=()=>new Date().toISOString().slice(0,10);
+const money=n=>`${Math.round(Number(n)||0).toLocaleString("en-US")} د.ع`;
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const dateFmt=d=>d?new Date(d+"T12:00:00").toLocaleDateString("ar-IQ",{day:"numeric",month:"short",year:"numeric"}):"—";
+const nowTime=()=>new Date().toLocaleTimeString("ar-IQ",{hour:"2-digit",minute:"2-digit"});
+const fresh=()=>({version:2,products:[],sales:[],expenses:[],sessions:[],activeSession:null});
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||"null");return x&&Array.isArray(x.products)&&Array.isArray(x.sales)?{...fresh(),...x}:fresh()}catch{return fresh()}}
+let db=load(), cart={}, productFilter="all", toastTimer=null;
+function persist(){localStorage.setItem(KEY,JSON.stringify(db));renderAll()}
+function toast(s){const e=$("#toast");e.textContent=s;e.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.classList.remove("show"),2600)}
+function txToday(list){return list.filter(x=>x.date===today())}
+function salesInPeriod(period){return db.sales.filter(s=>period==="all"||(period==="month"?s.date.slice(0,7)===today().slice(0,7):s.date===today()))}
+function expensesInPeriod(period){return db.expenses.filter(e=>period==="all"||(period==="month"?e.date.slice(0,7)===today().slice(0,7):e.date===today()))}
+function totals(sales,expenses){const revenue=sales.reduce((a,s)=>a+s.total,0),cost=sales.reduce((a,s)=>a+s.costTotal,0),gross=revenue-cost,exp=expenses.reduce((a,e)=>a+e.amount,0);return {revenue,cost,gross,exp,net:gross-exp}}
+function activeSales(){return db.activeSession?db.sales.filter(s=>s.sessionId===db.activeSession.id):txToday(db.sales)}
+function activeExpenses(){return db.activeSession?db.expenses.filter(e=>e.sessionId===db.activeSession.id):txToday(db.expenses)}
+function stockCount(){return db.products.reduce((a,p)=>a+p.qty,0)}
+function stockValue(){return db.products.reduce((a,p)=>a+p.qty*p.cost,0)}
+function stockMarkup(p){return p.price-p.cost}
+function productThumb(p){return `<div class="thumb">${esc((p.name||"?").slice(0,1))}</div>`}
+function saleRow(s){return `<div class="row"><div class="thumb">✓</div><div class="rowmain"><b>${esc(s.items.map(i=>`${i.name} ×${i.qty}`).join("، "))}</b><small>${dateFmt(s.date)} · ${esc(s.time||"")} · ${s.items.length} نوع</small></div><div class="rowval"><span>${money(s.total)}</span><small class="green" style="display:block;margin-top:3px">ربح ${money(s.gross)}</small></div></div>`}
+function renderHome(){
+const ss=txToday(db.sales), ee=txToday(db.expenses), t=totals(ss,ee);
+$("#today").textContent=new Date().toLocaleDateString("ar-IQ",{weekday:"long",day:"numeric",month:"long"});
+$("#homeProfit").innerHTML=`${t.net.toLocaleString("en-US")} <small>د.ع</small>`;$("#homeSales").textContent=money(t.revenue);$("#homeGross").textContent=money(t.gross);$("#homeExpenses").textContent=money(t.exp);$("#homeStock").textContent=money(stockValue());$("#homeStockCount").textContent=`${stockCount().toLocaleString("en-US")} قطعة متوفرة`;
+$("#homeSessionPill").textContent=db.activeSession?"الجلسة مفتوحة":"الجلسة مغلقة";$("#topStatus").textContent=db.activeSession?"● الجلسة مفتوحة":"● الجلسة مغلقة";$("#topStatus").style.background=db.activeSession?"var(--greenbg)":"#fff4db";$("#topStatus").style.color=db.activeSession?"var(--green)":"#9a6815";
+$("#recentSales").innerHTML=ss.length?ss.slice().reverse().slice(0,4).map(saleRow).join(""):'<div class="empty">ماكو مبيعات اليوم. ابدأ من شاشة البيع.</div>';
+const low=db.products.filter(p=>p.qty<=p.min);$("#lowStock").innerHTML=low.length?low.slice(0,4).map(p=>`<div class="row">${productThumb(p)}<div class="rowmain"><b>${esc(p.name)}</b><small>متبقي ${p.qty} قطعة</small></div><span class="stock-low">${p.qty===0?"نفد المخزون":"مخزون قليل"}</span></div>`).join(""):'<div class="empty">ماكو منتجات منخفضة المخزون.</div>';
+}
+function renderProducts(){
+const q=$("#productSearch").value.trim().toLowerCase();let ps=db.products.filter(p=>p.name.toLowerCase().includes(q)||String(p.notes||"").toLowerCase().includes(q));
+if(productFilter==="low")ps=ps.filter(p=>p.qty>0&&p.qty<=p.min);if(productFilter==="out")ps=ps.filter(p=>p.qty===0);
+$("#productsList").innerHTML=ps.length?ps.map(p=>`<article class="product-card">${productThumb(p)}<div class="product-info"><b>${esc(p.name)}</b><p>شراء ${money(p.cost)} · بيع ${money(p.price)}</p><div class="product-prices"><span class="tag">ربح/قطعة: <b class="${stockMarkup(p)>=0?"green":"red"}">${money(stockMarkup(p))}</b></span><span class="tag">المخزون: <b>${p.qty}</b></span></div></div><div class="product-actions"><button class="btn ghost small" data-edit-product="${p.id}">تعديل</button><button class="btn small" data-add-cart="${p.id}" ${p.qty<=0?"disabled":""}>بيع</button></div></article>`).join(""):'<div class="card empty">ماكو منتجات تطابق البحث. اضغط «منتج» لإضافة بضاعة.</div>';
+}
+function renderSell(){
+const q=$("#sellSearch").value.trim().toLowerCase();const ps=db.products.filter(p=>p.name.toLowerCase().includes(q)&&p.qty>0);
+$("#sellProducts").innerHTML=ps.length?ps.map(p=>{const n=cart[p.id]||0;return `<div class="sale-item">${productThumb(p)}<div class="info"><b>${esc(p.name)}</b><small>${money(p.price)} للقطعة · متوفر ${p.qty}</small></div><div class="qty"><button data-cart-minus="${p.id}" aria-label="تقليل">−</button><strong>${n}</strong><button data-cart-plus="${p.id}" aria-label="زيادة" ${n>=p.qty?"disabled":""}>＋</button></div></div>`}).join(""):'<div class="card empty">ماكو منتجات متاحة للبيع. أضف منتجات أو تحقق من المخزون.</div>';
+let total=0,profit=0,count=0;Object.entries(cart).forEach(([id,n])=>{const p=db.products.find(x=>x.id===id);if(p&&n>0){total+=p.price*n;profit+=(p.price-p.cost)*n;count+=n}});
+$("#cartTotal").textContent=money(total);$("#cartProfit").textContent=money(profit);$("#cartCount").textContent=`${count} قطعة`;$("#checkoutBtn").disabled=count===0;$("#checkoutBtn").style.opacity=count===0?".55":"1";
+}
+function renderSession(){
+const s=db.activeSession, sales=s?db.sales.filter(x=>x.sessionId===s.id):[], ex=s?db.expenses.filter(x=>x.sessionId===s.id):[], t=totals(sales,ex);
+$("#sessionStatus").classList.toggle("closed",!s);
+$("#sessionStatus").innerHTML=s?`<div class="session-symbol">●</div><div><b>الجلسة مفتوحة</b><small>بدأت بتاريخ ${dateFmt(s.date)} الساعة ${esc(s.time)} · بداية الصندوق ${money(s.openingCash)}</small></div>`:`<div class="session-symbol">◷</div><div><b>الجلسة مغلقة حالياً</b><small>افتح جلسة جديدة لتسجيل بداية الصندوق.</small></div>`;
+$("#sessionSales").textContent=money(t.revenue);$("#sessionGross").textContent=money(t.gross);$("#sessionExpenses").textContent=money(t.exp);$("#sessionProfit").textContent=money(t.net);
+$("#sessionAction").textContent=s?"إنهاء الجلسة وحساب الصندوق":"＋ فتح جلسة اليوم";
+if(s){
+const cashSales=sales.reduce((a,x)=>a+(x.payment==="cash"?x.total:0),0), cashExp=ex.reduce((a,x)=>a+(x.payment==="cash"?x.amount:0),0), expected=s.openingCash+cashSales-cashExp;
+$("#sessionSummary").innerHTML=`<h2>ملخص الجلسة الحالية</h2><div class="sumline"><span>بداية الصندوق</span><b>${money(s.openingCash)}</b></div><div class="sumline"><span>مبيعات نقدية</span><b>${money(cashSales)}</b></div><div class="sumline"><span>مصاريف نقدية</span><b>${money(cashExp)}</b></div><div class="sumline"><span>النقد المتوقع بالصندوق</span><b>${money(expected)}</b></div><p class="note">الربح المحسوب يعتمد على تكلفة المنتجات والمصاريف المسجلة. النقد المتوقع لا يشمل البيع الآجل أو أي سحب/إيداع لم تسجله.</p>`;
+}else{$("#sessionSummary").innerHTML='<h2>ملخص الجلسة</h2><p class="note">بعد فتح الجلسة، راح تظهر هنا تفاصيل الصندوق والمبيعات والمصاريف.</p>'}
+$("#sessionHistory").innerHTML=db.sessions.length?db.sessions.slice().reverse().map(s=>`<div class="row"><div class="thumb">${s.difference===0?"✓":"د.ع"}</div><div class="rowmain"><b>${dateFmt(s.date)} · ${esc(s.time||"")}</b><small>مبيعات ${money(s.revenue)} · ربح صافي ${money(s.net)}</small><small>النقد المتوقع ${money(s.expectedCash)} · الفعلي ${money(s.actualCash)}</small></div><div class="rowval ${s.difference===0?"green":s.difference<0?"red":""}">${s.difference>0?"+":""}${money(s.difference)}</div></div>`).join(""):'<div class="empty">ماكو جلسات منتهية لحد الآن.</div>';
+}
+function renderReports(){
+const period=$("#reportPeriod").value, sales=salesInPeriod(period), ex=expensesInPeriod(period),t=totals(sales,ex);
+$("#reportNet").innerHTML=`${t.net.toLocaleString("en-US")} <small>د.ع</small>`;$("#reportSales").textContent=money(t.revenue);$("#reportCost").textContent=money(t.cost);$("#reportGross").textContent=money(t.gross);$("#reportExpenses").textContent=money(t.exp);
+$("#salesHistory").innerHTML=sales.length?sales.slice().reverse().map(saleRow).join(""):'<div class="empty">لا توجد مبيعات ضمن هذه الفترة.</div>';
+}
+function renderAll(){renderHome();renderProducts();renderSell();renderSession();renderReports()}
+function go(name){$$(".screen").forEach(x=>x.classList.toggle("active",x.id==="screen-"+name));$$(".nav").forEach(x=>x.classList.toggle("active",x.dataset.screen===name));window.scrollTo({top:0,behavior:"smooth"})}
+function openEntry(type,id=null){
+$("#entryForm").reset();$("#formError").textContent="";$("#formType").value=type;$("#editId").value=id||"";
+const isP=type==="product",isE=type==="expense";$("#productFields").hidden=!isP;$("#expenseFields").hidden=!isE;
+$("#modalTitle").textContent=isP?(id?"تعديل المنتج":"إضافة منتج جديد"):"تسجيل مصروف";$("#modalEyebrow").textContent=isP?"المخزون والتسعير":"مصاريف المحل";
+$("#pMin").value=3;$("#eDate").value=today();$("#ePayment").value="cash";
+if(id){const p=db.products.find(x=>x.id===id);if(p){$("#pName").value=p.name;$("#pCost").value=p.cost;$("#pPrice").value=p.price;$("#pQty").value=p.qty;$("#pMin").value=p.min;$("#pNotes").value=p.notes||"";}}
+$("#modalBackdrop").hidden=false;setTimeout(()=>$(isP?"#pName":"#eTitle").focus(),70)
+}
+function closeEntry(){$("#modalBackdrop").hidden=true}
+function openSessionModal(close=false){
+$("#sessionForm").reset();$("#sessionError").textContent="";$("#closingFields").hidden=!close;$("#openingLabel").hidden=close;
+// Keep hidden required inputs disabled so Android browsers don't block form submission.
+$("#openingCash").disabled=close;$("#openingCash").required=!close;
+$("#actualCash").disabled=!close;$("#actualCash").required=close;
+$("#sessionModalTitle").textContent=close?"إنهاء الجلسة":"فتح جلسة جديدة";$("#sessionSubmit").textContent=close?"حفظ الإغلاق":"فتح الجلسة";
+if(close){const s=db.activeSession,sales=db.sales.filter(x=>x.sessionId===s.id),ex=db.expenses.filter(x=>x.sessionId===s.id),cashSales=sales.reduce((a,x)=>a+(x.payment==="cash"?x.total:0),0),cashExp=ex.reduce((a,x)=>a+(x.payment==="cash"?x.amount:0),0),expected=s.openingCash+cashSales-cashExp;$("#actualCash").value=expected;$("#closePreview").textContent=`النقد المتوقع حالياً بالصندوق: ${money(expected)}. عدّ النقد الموجود فعلياً وأدخله حتى نحسب الفرق.`;}
+$("#sessionBackdrop").hidden=false;
+}
+function closeSessionModal(){$("#sessionBackdrop").hidden=true}
+function checkout(){
+if(!db.activeSession){toast("افتح الجلسة اليومية أولاً حتى تُحتسب المبيعات ضمن يوم العمل.");go("session");return;}
+const items=[];let total=0,costTotal=0;
+for(const [id,qty] of Object.entries(cart)){if(qty<=0)continue;const p=db.products.find(x=>x.id===id);if(!p||qty>p.qty){toast(`الكمية غير متوفرة للمنتج ${p?.name||""}`);return;}const line={productId:p.id,name:p.name,qty,unitPrice:p.price,unitCost:p.cost,lineTotal:p.price*qty,lineCost:p.cost*qty};items.push(line);total+=line.lineTotal;costTotal+=line.lineCost;}
+if(!items.length)return;
+if(!confirm(`تأكيد بيع بقيمة ${money(total)}؟\\nالربح الإجمالي المتوقع: ${money(total-costTotal)}`))return;
+const sale={id:uid(),date:today(),time:nowTime(),sessionId:db.activeSession?.id||null,items,total,costTotal,gross:total-costTotal,payment:"cash",createdAt:new Date().toISOString()};
+items.forEach(i=>{const p=db.products.find(x=>x.id===i.productId);p.qty-=i.qty;});
+db.sales.push(sale);cart={};persist();go("home");toast("تم البيع وتحديث المخزون بنجاح.");
+}
+function download(name,content,type){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function backup(){download(`hesabati-shop-backup-${today()}.json`,JSON.stringify({...db,exportedAt:new Date().toISOString()},null,2),"application/json");toast("تم تجهيز النسخة الاحتياطية")}
+function csv(){const rows=[["التاريخ","الوقت","المنتجات","الكمية","المبيعات IQD","تكلفة البضاعة IQD","الربح الإجمالي IQD"],...db.sales.map(s=>[s.date,s.time,s.items.map(i=>i.name).join(" / "),s.items.reduce((a,i)=>a+i.qty,0),s.total,s.costTotal,s.gross])];download(`hesabati-sales-${today()}.csv`,"\ufeff"+rows.map(r=>r.map(x=>`"${String(x??"").replace(/"/g,'""')}"`).join(",")).join("\r\n"),"text/csv;charset=utf-8");toast("تم تصدير المبيعات")}
+function importFile(file){if(!file)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!Array.isArray(x.products)||!Array.isArray(x.sales)||!Array.isArray(x.expenses)||!Array.isArray(x.sessions))throw 0;if(!confirm("ستُستبدل البيانات الحالية بالنسخة المستوردة. هل تريد المتابعة؟"))return;db={...fresh(),...x};cart={};persist();toast("تمت استعادة البيانات")}catch{toast("ملف النسخة الاحتياطية غير صالح")}};r.readAsText(file)}
+$$(".nav").forEach(b=>b.addEventListener("click",()=>go(b.dataset.screen)));
+$$("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+$$("[data-action]").forEach(b=>b.addEventListener("click",()=>openEntry(b.dataset.action)));
+$("#closeModal").addEventListener("click",closeEntry);$("#modalBackdrop").addEventListener("click",e=>{if(e.target===$("#modalBackdrop"))closeEntry()});
+$("#closeSessionModal").addEventListener("click",closeSessionModal);$("#sessionBackdrop").addEventListener("click",e=>{if(e.target===$("#sessionBackdrop"))closeSessionModal()});
+$("#entryForm").addEventListener("submit",e=>{e.preventDefault();const type=$("#formType").value,id=$("#editId").value;
+if(type==="product"){const name=$("#pName").value.trim(),cost=Number($("#pCost").value),price=Number($("#pPrice").value),qty=Number($("#pQty").value),min=Number($("#pMin").value);if(!name||cost<0||price<0||qty<0||min<0){$("#formError").textContent="تحقق من الاسم والأسعار والكميات.";return;}if(price<cost&&!confirm("سعر البيع أقل من سعر الشراء، يعني خسارة بالقطعة. هل تريد الحفظ؟"))return;
+if(id){const p=db.products.find(x=>x.id===id);Object.assign(p,{name,cost,price,qty,min,notes:$("#pNotes").value.trim(),updatedAt:new Date().toISOString()})}else db.products.push({id:uid(),name,cost,price,qty,min,notes:$("#pNotes").value.trim(),createdAt:new Date().toISOString()});persist();closeEntry();toast(id?"تم تعديل المنتج":"تمت إضافة المنتج");}
+else{const amount=Number($("#eAmount").value);if(!$("#eTitle").value.trim()||amount<=0){$("#formError").textContent="أدخل عنواناً ومبلغاً صحيحاً.";return;}db.expenses.push({id:uid(),title:$("#eTitle").value.trim(),amount,category:$("#eCategory").value,date:$("#eDate").value,payment:$("#ePayment").value,notes:$("#eNotes").value.trim(),sessionId:db.activeSession?.id||null,createdAt:new Date().toISOString()});persist();closeEntry();toast("تم تسجيل المصروف");}
+});
+$("#productSearch").addEventListener("input",renderProducts);$("#sellSearch").addEventListener("input",renderSell);$("#reportPeriod").addEventListener("change",renderReports);
+$$("[data-pfilter]").forEach(b=>b.addEventListener("click",()=>{productFilter=b.dataset.pfilter;$$("[data-pfilter]").forEach(x=>x.classList.toggle("active",x===b));renderProducts()}));
+document.addEventListener("click",e=>{
+const edit=e.target.closest("[data-edit-product]");if(edit)openEntry("product",edit.dataset.editProduct);
+const add=e.target.closest("[data-add-cart]");if(add){const p=db.products.find(x=>x.id===add.dataset.addCart);if(p&&p.qty>0){cart[p.id]=Math.min(p.qty,(cart[p.id]||0)+1);renderSell();go("sell")}}
+const plus=e.target.closest("[data-cart-plus]");if(plus){const p=db.products.find(x=>x.id===plus.dataset.cartPlus);if(p)cart[p.id]=Math.min(p.qty,(cart[p.id]||0)+1);renderSell()}
+const minus=e.target.closest("[data-cart-minus]");if(minus){cart[minus.dataset.cartMinus]=Math.max(0,(cart[minus.dataset.cartMinus]||0)-1);renderSell()}
+});
+$("#checkoutBtn").addEventListener("click",checkout);
+$("#sessionAction").addEventListener("click",()=>openSessionModal(!!db.activeSession));
+$("#sessionForm").addEventListener("submit",e=>{e.preventDefault();if(!db.activeSession){const opening=Number($("#openingCash").value);if(opening<0){$("#sessionError").textContent="أدخل مبلغاً صحيحاً.";return;}db.activeSession={id:uid(),date:today(),time:nowTime(),openingCash:opening,startedAt:new Date().toISOString()};persist();closeSessionModal();toast("تم فتح الجلسة");}
+else{const s=db.activeSession,actual=Number($("#actualCash").value);if(actual<0){$("#sessionError").textContent="أدخل مبلغاً صحيحاً.";return;}const sales=db.sales.filter(x=>x.sessionId===s.id),ex=db.expenses.filter(x=>x.sessionId===s.id),t=totals(sales,ex),cashSales=sales.reduce((a,x)=>a+(x.payment==="cash"?x.total:0),0),cashExp=ex.reduce((a,x)=>a+(x.payment==="cash"?x.amount:0),0),expected=s.openingCash+cashSales-cashExp;db.sessions.push({...s,endedAt:new Date().toISOString(),endTime:nowTime(),revenue:t.revenue,cost:t.cost,gross:t.gross,expenses:t.exp,net:t.net,expectedCash:expected,actualCash:actual,difference:actual-expected,notes:$("#closingNotes").value.trim()});db.activeSession=null;persist();closeSessionModal();toast(`انتهت الجلسة. فرق الصندوق: ${money(actual-expected)}`);}}
+);
+$("#exportBtn").addEventListener("click",backup);$("#exportBtn2").addEventListener("click",backup);$("#csvBtn").addEventListener("click",csv);$("#importBtn").addEventListener("click",()=>$("#importFile").click());$("#importFile").addEventListener("change",e=>{importFile(e.target.files[0]);e.target.value=""});
+$("#clearBtn").addEventListener("click",()=>{if(confirm("تحذير: سيتم حذف كل المنتجات والمبيعات والمصاريف والجلسات نهائياً من هذا الجهاز. هل صدّرت نسخة احتياطية وتريد المتابعة؟")){db=fresh();cart={};persist();toast("تم حذف البيانات")}})
+if("serviceWorker"in navigator&&location.protocol.startsWith("http"))window.addEventListener("load",()=>navigator.serviceWorker.register("./service-worker.js").catch(()=>{}));
+renderAll();
+})();
+</script></body></html>
